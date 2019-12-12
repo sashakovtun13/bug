@@ -19,14 +19,7 @@
     
 </head>
 <body>
-<div class="reee" >
-  <a href=""  data-toggle="modal" data-target="#darkModalForm">
-  <p id="blink2" style="color: red;">-57%
-  
-  </p>
-  
-  </a>
-</div>
+
 
 
 <div id="snow-animation-container"></div>
@@ -576,7 +569,70 @@
 				#offer-block {text-align: center}
 				#offer-block-link {color: inherit}
 			</style>
-		</div></footer>
+    </div></footer>
+    
+    <div class="yvedw">
+      <div class="yved yvedf1" >
+        <div class="yvedvt">
+          <div class="yvedt">Инна Романова, г.Киев, сделала заказ на сумму 749 грн, число 1 шт</div>
+        </div>
+      </div>
+      <div class="yved yvedf2">
+        <div class="yvedvt">
+          <div class="yvedt">Карина Романченко, г.Одесса, сделала заказ на сумму 749 грн, число 1 шт</div>
+        </div>
+      </div>
+      <div class="yved yvedf1 ">
+        <div class="yvedvt">
+          <div class="yvedt">Ольга Воронова, г.Запорожье, сделала заказ на сумму 749 грн, число 1 шт</div>
+        </div>
+      </div>
+      <div class="yved yvedf1">
+        <div class="yvedvt">
+          <div class="yvedt">Дарья Максимчук, г.Долина, сделала заказ на сумму 749 грн, число 1 шт</div>
+        </div>
+      </div>
+      <div class="yved yvedf1">
+        <div class="yvedvt">
+          <div class="yvedt">Анна Дзеньковская, г.Хуст, сделала заказ на сумму 749 грн, число 1 шт</div>
+        </div>
+      </div>
+      <div class="yved yvedf1">
+        <div class="yvedvt">
+          <div class="yvedt">Ярослава Витрук, г.Хмельницкий, сделала заказ на сумму 749 грн, число 1 шт</div>
+        </div>
+      </div>
+      <div class="yved yvedf1">
+        <div class="yvedvt">
+          <div class="yvedt">Юлия Музыка, г.Киев, сделала заказ на сумму 749 грн, число 1 шт</div>
+        </div>
+      </div>
+      <div class="yved yvedf2">
+        <div class="yvedvt">
+          <div class="yvedt">Анна Багнечук, г.Борисполь, сделала заказ на сумму 749 грн, число 1 шт</div>
+        </div>
+      </div>
+      <div class="yved yvedf1 ">
+        <div class="yvedvt">
+          <div class="yvedt">Инна Тращенко, г.Бердянск, сделала заказ на сумму 749 грн, число 1 шт</div>
+        </div>
+      </div>
+      <div class="yved yvedf1">
+        <div class="yvedvt">
+          <div class="yvedt">Жання Долматова, г.Кривой Рог, сделала заказ на сумму 749 грн, число 1 шт</div>
+        </div>
+      </div>
+      <div class="yved yvedf1">
+        <div class="yvedvt">
+          <div class="yvedt">Людмила Марченко, г.Николаев, сделала заказ на сумму 749 грн, число 1 шт</div>
+        </div>
+      </div>
+      <div class="yved yvedf1">
+        <div class="yvedvt">
+          <div class="yvedt">Алина Добренко, г.Житомир, сделала заказ на сумму 749, число 1 шт</div>
+        </div>
+      </div>
+    </div>
     <!-- SCRIPTS -->
   
   <!-- JQuery -->
@@ -596,6 +652,25 @@
   <script src="js/script.js"></script>
   <script src="https://daruse.ru/assets/js/snowfall.js"></script>
   <script type="text/javascript">
+  $(document).ready(function(){
+    if(window.innerWidth > 1000) {
+        var i = 0;
+
+        function yved() {
+            i = 1;
+            $('.yved:nth-child(' + i + ')').fadeIn(500).delay(7000).fadeOut(500);
+        }
+
+        setTimeout(function () {
+            setInterval(
+                function () {
+                    i = i + 1;
+                    $('.yved:nth-child(' + i + ')').fadeIn(500).delay(7000).fadeOut(500);
+                }, 50000);
+            yved();
+        }, 20000);
+    }
+});
       jQuery(function($){
     
     $("#contact_tel").mask("+380999999999");
@@ -609,6 +684,7 @@
             shadow: false,
         });
   </script>
+
 
 
 </body>
