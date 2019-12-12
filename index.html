@@ -19,7 +19,14 @@
     
 </head>
 <body>
-
+<div class="reee" >
+  <a href=""  data-toggle="modal" data-target="#darkModalForm">
+  <p id="blink2" style="color: red;">-57%
+  
+  </p>
+  
+  </a>
+</div>
 
 
 <div id="snow-animation-container"></div>
@@ -88,6 +95,7 @@
                 <h2>Оригинальный дизайн!</h2>
                 <h2>Натуральная кожа!</h2>
                 <h2>Идеально ровные швы!</h2>
+                <h2>Всего за  <span style="color: greenyellow;">599грн</span>!</h2>
                 <a href="#s1" class="btn">Выбрать</a>
             </div>
 
@@ -96,6 +104,10 @@
       </div>
     </div>
   </div>
+
+
+
+
   <h1 id="s1">Каталог</h1>
   <div class="container">
     <div class="row">
@@ -109,7 +121,7 @@
               </div>
               <div class="product-title">
                 <a href=""  data-toggle="modal" data-target="#darkModalForm">Черная</a>
-                
+                <span class="product-price">599грн</span>
               </div>
             </div>
       </div>
@@ -123,7 +135,7 @@
               </div>
               <div class="product-title">
                 <a href=""  data-toggle="modal" data-target="#darkModalForm">Kоричневая</a>
-                
+                <span class="product-price">599грн</span>
               </div>
             </div>
       </div>
@@ -137,7 +149,7 @@
               </div>
               <div class="product-title">
                 <a href=""  data-toggle="modal" data-target="#darkModalForm">Розовая</a>
-                
+                <span class="product-price">599грн</span>
               </div>
             </div>
       </div>
@@ -153,7 +165,7 @@
                 </div>
                 <div class="product-title">
                   <a href=""  data-toggle="modal" data-target="#darkModalForm">Кремовая</a>
-                  
+                  <span class="product-price">599грн</span>
                 </div>
               </div>
         </div>
@@ -167,7 +179,7 @@
                 </div>
                 <div class="product-title">
                   <a href=""  data-toggle="modal" data-target="#darkModalForm">Светло коричневая</a>
-                  
+                  <span class="product-price">599грн</span>
                 </div>
               </div>
         </div>
@@ -181,7 +193,7 @@
                 </div>
                 <div class="product-title">
                   <a href=""  data-toggle="modal" data-target="#darkModalForm">Зеленая</a>
-                  
+                  <span class="product-price">599грн</span>
                 </div>
               </div>
         </div>
@@ -391,7 +403,7 @@
             <h3 style="color: white;">
               Успей купить любую сумку со скидкой <span style=" color: red; font-size: 40px; position: relative; top: 5px;">57%</span>
             </h3>
-            <h2 style="color: white; font-size: 40px;"> Всего за <span style="color: red;">649грн.</span> </h2>
+            <h2 style="color: white; font-size: 40px;"> Всего за <span style="color: red;">599грн.</span> </h2>
             <script src="//megatimer.ru/get/36eb09e367d830a6395cf9abdb66c612.js"></script>
             <a href=""  data-toggle="modal" data-target="#darkModalForm" class="btn" style="margin-top: 20px; margin-bottom: 20px;">Заказать</a>
         </div>
@@ -457,8 +469,17 @@
     <div class="modal-content card card-image" style="background-image: url('./img/skin.jpg');">
       <div class="text-white rgba-stylish-strong py-5 px-5 z-depth-4">
         <!--Header-->
+       
         <div class="modal-header text-center pb-4">
-          <h3 class="modal-title w-100 white-text font-weight-bold" id="myModalLabel">Заказать сумку</h3>
+          
+          <h3 class="modal-title w-100 white-text font-weight-bold" id="myModalLabel" style="margin: 0;">
+            
+            <span style="color: red;"> СТАРАЯ ЦЕНА <del>1340ГРН</del><br></span>
+            Успей заказать сейчас с экономией <span style="color: greenyellow;">741‬грн</span><br>
+            Всего за<br>
+            <span style="color: red; border: 1px solid red; padding: 5px; ">599 ГРН.</span> <br>
+            
+            </h3>
           <button type="button" class="close white-text" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -469,7 +490,7 @@
             <form action="api.php" method="post" name="order_form" target="_parent" >
           <!--Body-->
           <div class="md-form mb-5">
-            <input type="text" value="" placeholder="Введите Ваше Имя*"  name="name" pattern="[A-Za-zА-Яа-яЁё]{2,64}" required title="Разрешены только буквы" class="form-control validate white-text">
+            <input type="text" value="" placeholder="Введите Ваше Имя*"  name="name" pattern="[A-Za-zА-Яа-яЁё\s]{2,64}" required title="Разрешены только буквы" class="form-control validate white-text">
            
           </div>
 
@@ -484,7 +505,7 @@
 
             <!--Grid column-->
             <div class="text-center mb-3 col-md-12">
-              <button type="submit" class="btn btn-success btn-block btn-rounded z-depth-1" style="background: transparent !important;">Sign up</button>
+              <button type="submit" class="btn btn-success btn-block btn-rounded z-depth-1" style="background: transparent !important;">Заказать</button>
             </div>
             <!--Grid column-->
 </form>

@@ -28,7 +28,7 @@ h1{
 }
 .main_text{
     text-align: center;
-    padding: calc(50vh - 250px/2) 0px 0px 0px;
+    padding: calc(50vh - 350px/2) 0px 0px 0px;
     min-height: 100vh;
     overflow: hidden;
     
@@ -316,16 +316,77 @@ h3{
   @media (max-width:320px){
     .main_text{
 
-        padding: calc(50vh - 400px/2) 0px 0px 0px;
+        padding: calc(50vh - 450px/2) 0px 0px 0px;
 
         
     }
+    h2 {
+      margin: 10px;
+  }
     .main_text img{
         width: 250px;
     }
   }
   @media (max-width:480px){
+    h2 {
+      margin: 15px;
+  }
+    .reee{
+      width: 100px !important;
+      height: 100px !important;
+      background: url("../img/reee.png") no-repeat;
+      background-size: cover;
+      text-align: center;
+      justify-content: center;
+      line-height: 150px !important;
+      font-size: 30px !important;
+      z-index: 999;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+    }
     .s5img{
       width: 99px;
     }
+    .main-head {
+      background-image: url("../img/1m.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: bottom;
+      min-height: 100vh;
+      overflow: hidden;
   }
+  }
+
+
+  .pl-5, .px-5 {
+    padding-left: 1.5rem!important;
+}
+
+.pb-5, .py-5 {
+    padding-bottom: 1rem!important;
+}
+.pr-5, .px-5 {
+    padding-right: 1.5rem!important;
+}
+.pt-5, .py-5 {
+    padding-top: 2rem!important;
+}
+
+.carousel-item{
+  height: 500px;
+}
+.reee{
+  width: 200px;
+  height: 200px;
+  background: url("../img/reee.png") no-repeat;
+  background-size: cover;
+  text-align: center;
+  justify-content: center;
+  line-height: 300px;
+  font-size: 50px;
+  z-index: 999;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
